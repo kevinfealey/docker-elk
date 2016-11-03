@@ -15,7 +15,7 @@ services:
     command: -f /etc/logstash/conf.d/
     volumes:
       - ./logstash/config:/etc/logstash/conf.d
-      - ./logstash/tmp:/tmp
+      - ./logstash/tmp:/var/tmp
     ports:
       - "5000:5000"
     networks:
